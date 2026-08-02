@@ -1,0 +1,39 @@
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+*.log
+
+# ===== Trained models / large binaries (track with Git LFS if needed) =====
+# Uncomment if you don't want to version the trained model directly:
+# src/models/*.pkl
+
+# ===== Arduino / PlatformIO build artifacts =====
+build/
+*.bin
+*.elf
+*.hex
+*.map
+*.eep
+*.with_bootloader.*
+
+# ===== Proteus local/backup state =====
+*.pdsbak
+*.workspace
+
+# ===== OS / editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ===== Jupyter =====
+.ipynb_checkpoints/

@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+message: "If you use this software or reference this project, please cite it as below."
+type: software
+title: "IA Gesture: Real-Time Hand-Gesture Recognition and IoT Assistive System"
+abstract: >
+  IA Gesture is an accessibility-focused system that translates hand
+  gestures into readable/audible messages in real time. It combines
+  computer vision (OpenCV, MediaPipe), a machine learning gesture
+  classifier (scikit-learn), MQTT-based IoT communication, and an
+  ESP32/ESP8266 embedded assistant with an OLED display, buzzer, and
+  ultrasonic sensor, designed to support non-verbal, hearing-impaired,
+  and visually-impaired users.
+authors:
+  - family-names: "Harathi"
+    given-names: "Ilyes"
+    affiliation: "École Nationale d'Ingénieurs de Gabès (ENIG)"
+  - family-names: "Chihi"
+    given-names: "Malek"
+    affiliation: "École Nationale d'Ingénieurs de Gabès (ENIG)"
+  - family-names: "Akkeri"
+    given-names: "Farah"
+    affiliation: "École Nationale d'Ingénieurs de Gabès (ENIG)"
+  - family-names: "Fatnasi"
+    given-names: "Arij"
+    affiliation: "École Nationale d'Ingénieurs de Gabès (ENIG)"
+  - family-names: "Chayeb"
+    given-names: "May"
+    affiliation: "École Nationale d'Ingénieurs de Gabès (ENIG)"
+version: 1.0.0
+date-released: "2026-08-01"
+repository-code: "https://github.com/YOUR-USERNAME/IA-Gesture"
+url: "https://github.com/YOUR-USERNAME/IA-Gesture"
+license: MIT
+keywords:
+  - hand-gesture-recognition
+  - computer-vision
+  - mediapipe
+  - opencv
+  - machine-learning
+  - mqtt
+  - iot
+  - esp32
+  - esp8266
+  - assistive-technology
+  - accessibility
+  - embedded-systems
+contact:
+  - family-names: "Fleh"
+    given-names: "Aymen"
+    affiliation: "École Nationale d'Ingénieurs de Gabès (ENIG) — Project Supervisor"
+references:
+  - type: report
+    title: "Rapport de Projet — IA Gesture"
+    authors:
+      - family-names: "Harathi"
+        given-names: "Ilyes"
+      - family-names: "Chihi"
+        given-names: "Malek"
+      - family-names: "Akkeri"
+        given-names: "Farah"
+      - family-names: "Fatnasi"
+        given-names: "Arij"
+      - family-names: "Chayeb"
+        given-names: "May"
+    institution:
+      name: "École Nationale d'Ingénieurs de Gabès (ENIG)"
+    year: 2026
+    notes: "Full project report available at docs/rapport_IA_Gesture.pdf"
