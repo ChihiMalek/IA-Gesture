@@ -18,7 +18,7 @@ that's easy to review and keeps the project stable.
 Click **Fork** on GitHub, then clone your fork locally:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/IA-Gesture.git
+git clone https://github.com/ChihiMalek/IA-Gesture.git
 cd IA-Gesture
 ```
 
