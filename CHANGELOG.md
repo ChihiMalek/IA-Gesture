@@ -74,5 +74,5 @@ project at ENIG.
 - No automated accuracy/latency benchmarks are published yet (planned —
   see Unreleased section above).
 
-[Unreleased]: https://github.com/YOUR-USERNAME/IA-Gesture/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/YOUR-USERNAME/IA-Gesture/releases/tag/v1.0.0
+[Unreleased]: https://github.com/ChihiMalek/IA-Gesture/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/ChihiMalek/IA-Gesture/releases/tag/v1.0.0
