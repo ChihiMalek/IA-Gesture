@@ -28,8 +28,8 @@ authors:
     affiliation: "École Nationale d'Ingénieurs de Gabès (ENIG)"
 version: 1.0.0
 date-released: "2026-08-01"
-repository-code: "https://github.com/YOUR-USERNAME/IA-Gesture"
-url: "https://github.com/YOUR-USERNAME/IA-Gesture"
+repository-code: "https://github.com/ChihiMalek/IA-Gesture"
+url: "https://github.com/ChihiMalek/IA-Gesture"
 license: MIT
 keywords:
   - hand-gesture-recognition
