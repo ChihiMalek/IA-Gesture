@@ -1,0 +1,87 @@
+name: CI
+
+# Lightweight sanity-check pipeline for the Python side of the project.
+# It does NOT execute the gesture-recognition scripts (they open a webcam
+# and run an infinite capture loop, which is not meaningful in CI) — it
+# only verifies that dependencies install cleanly and that every Python
+# file is syntactically valid / importable-in-principle.
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  install-and-verify:
+    name: Install dependencies & verify Python sources
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
+      - name: Install project dependencies
+        run: pip install -r requirements.txt
+
+      - name: Verify Python syntax (py_compile)
+        run: |
+          echo "Compiling all tracked Python files to check for syntax errors..."
+          python -m py_compile $(git ls-files '*.py')
+
+      - name: Static import check (compileall)
+        run: |
+          python -m compileall -q src experiments
+          echo "All Python modules compiled successfully."
+
+  lint:
+    name: Code style check (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true # Style issues are reported but do not fail the build.
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install linting tools
+        run: pip install flake8
+
+      - name: Run flake8 (report only)
+        run: |
+          flake8 src experiments \
+            --max-line-length=120 \
+            --exit-zero \
+            --statistics
+
+  markdown-links:
+    name: Check Markdown links (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check relative links in README
+        run: |
+          echo "Markdown link checking placeholder — integrate a tool such as"
+          echo "'lycheeverse/lychee-action' here if stricter link validation is desired."
