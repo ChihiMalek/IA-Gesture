@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: 📖 Project Report (full documentation)
-    url: https://github.com/YOUR-USERNAME/IA-Gesture/blob/main/docs/rapport_IA_Gesture.pdf
+    url: https://github.com/ChihiMalek/IA-Gesture/blob/main/docs/rapport_IA_Gesture.pdf
     about: Read the complete academic report before opening an issue — it may already answer your question.
   - name: 🏗 Architecture Overview
-    url: https://github.com/YOUR-USERNAME/IA-Gesture/blob/main/docs/architecture.md
+    url: https://github.com/ChihiMalek/IA-Gesture/blob/main/docs/architecture.md
     about: Understand the system design (software + hardware) before reporting a bug.
