@@ -1,7 +1,7 @@
 # Architecture
 
 This document summarizes the system architecture described in detail in
-[`rapport_IA_Gesture.pdf`](rapport_IA_Gesture.pdf) (chapters 3–5).
+[`rapport_IA_Gesture.pdf`](rapport_IA_Gesture.pdf) .
 
 ## Overview
 
